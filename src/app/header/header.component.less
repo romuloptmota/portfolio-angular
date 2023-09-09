@@ -1,0 +1,33 @@
+@background-color: #1d365d;
+@background-color-hover: #172B4A;
+@font-color-header: #9BABC5;
+@font-color-header-hover: #FFFFFF;
+
+
+nav{
+  background: @background-color;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 0 50px ;
+    li{
+      list-style-type: none;
+      padding: 20px 0 20px 0;
+      a{
+        text-decoration: none;
+        color: @font-color-header;
+        padding: 20px 15px;
+        i{
+          padding-right: 3px;
+        }
+      }
+      a:hover{
+        background-color: @background-color-hover;
+        color: @font-color-header-hover;
+      }
+    }
+  }
+}
