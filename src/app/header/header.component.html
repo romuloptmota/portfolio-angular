@@ -1,14 +1,66 @@
-<header>
-  <nav>
-    <ul>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Formação</a></li>
-      <li><a href="#">Habilidades</a></li>
-      <li><a href="#">Portfólio</a></li>
-    </ul>
-    <ul>
-      <li><a href="#"><i class="fa-brands fa-github"></i>GitHub</a></li>
-      <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-    </ul>
-  </nav>
-</header>
+<ng-template [ngIf]="menuCompleto">
+  <header>
+    <nav class="menuCompleto">
+      <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Formação</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Portfólio</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-github"></i>GitHub</a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+      </ul>
+    </nav>
+  </header>
+</ng-template>
+
+<ng-template [ngIf]="menuMini">
+  <header>
+    <nav class="menuMini">
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown>
+            <button type="button"  class="btn-lg" ngbDropdownToggle>
+            Menu
+            </button>
+            <ul ngbDropdownMenu class="menuCompacto">
+              <li ngbDropdownItem><a href="#">Sobre</a></li>
+              <li ngbDropdownItem><a href="#">Formação</a></li>
+              <li ngbDropdownItem><a href="#">Habilidades</a></li>
+              <li ngbDropdownItem><a href="#">Portfólio</a></li>
+            </ul>
+            <ul class="linkRedes">
+              <li ngbDropdownItem><a href="#"><i class="fa-brands fa-github"></i>GitHub</a></li>
+              <li ngbDropdownItem><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</ng-template>
+
+<ng-template [ngIf]="menuCompacto">
+  <header>
+    <nav class="menuMini">
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown>
+            <button type="button"  class="btn-lg" ngbDropdownToggle>
+              Menu
+            </button>
+            <ul ngbDropdownMenu class="menuCompacto">
+              <li ngbDropdownItem><a href="#">Sobre</a></li>
+              <li ngbDropdownItem><a href="#">Formação</a></li>
+              <li ngbDropdownItem><a href="#">Habilidades</a></li>
+              <li ngbDropdownItem><a href="#">Portfólio</a></li>
+              <li ngbDropdownItem><a href="#"><i class="fa-brands fa-github"></i>GitHub</a></li>
+              <li ngbDropdownItem><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</ng-template>
