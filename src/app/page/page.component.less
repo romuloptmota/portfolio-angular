@@ -1,0 +1,45 @@
+@background-color: #1d365d;
+@background-color-destaque: #0B1A28;
+@font-color-background-destaque: #428BCA;
+@font-color: #9BABC5;
+@font-color-destaque: #FFFFFF;
+
+article section.sobre{
+  background-color: @background-color;
+  color: @font-color;
+  div{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 40px;
+    h2{
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 24px;
+      p{
+        b{
+          color: @font-color-destaque;
+        }
+        b.fullstack{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    h3{
+      font-size: 14px;
+      background-color: @background-color-destaque;
+      color: @font-color-background-destaque;
+      width: fit-content;
+      padding: 2px;
+      border-radius: 5px;
+    }
+    p.pSobre{
+      margin: auto;
+
+    }
+  }
+}
+
