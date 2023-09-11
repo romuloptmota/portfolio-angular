@@ -10,6 +10,7 @@ export class PageComponent implements OnInit{
   public condicaoDesenvolvedor: boolean = true;
   public condicaoFullStack: boolean = false;
 
+
   ngOnInit() {
     setInterval(() => {
       if(this.condicaoDesenvolvedor){

@@ -11,6 +11,7 @@ export class HeaderComponent{
   public menuMini: boolean = false;
   public menuCompacto: boolean = false;
 
+
   @HostListener('window:resize')
   onsize(): void{
     if(window.innerWidth > 690){

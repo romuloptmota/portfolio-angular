@@ -4,6 +4,10 @@
 @font-color: #9BABC5;
 @font-color-destaque: #FFFFFF;
 
+body{
+  min-width: 300px;
+}
+
 article section.sobre{
   background-color: @background-color;
   color: @font-color;
@@ -11,6 +15,7 @@ article section.sobre{
     width: 80%;
     max-width: 800px;
     margin: auto;
+    padding-top: 80px;
     padding-bottom: 40px;
     h2{
       display: flex;
@@ -31,10 +36,12 @@ article section.sobre{
     h3{
       font-size: 14px;
       background-color: @background-color-destaque;
-      color: @font-color-background-destaque;
       width: fit-content;
       padding: 2px;
       border-radius: 5px;
+      code{
+        color: @font-color-background-destaque;
+      }
     }
     p.pSobre{
       margin: auto;
