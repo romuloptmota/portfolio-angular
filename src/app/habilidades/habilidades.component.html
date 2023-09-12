@@ -1,35 +1,20 @@
 <article>
+  <header>
+    <div>
+      <h3><span>Bem vindo</span> ao meu portfólio<span>!</span></h3>
+    </div>
+  </header>
 
   <section>
     <div>
       <h2>Habilidades</h2>
-      <h3>{{ tecnologia }}</h3>
-      <picture>
-        <img src="assets/imagem/logo-habilidades/angular.png" alt="" (mouseover)="aoPassarMouse('Angular')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/html5.png" alt="" (mouseover)="aoPassarMouse('HTML5')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/css3.png" alt="" (mouseover)="aoPassarMouse('CSS3')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/javascript.png" alt="" (mouseover)="aoPassarMouse('JavaScript')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/typescript.png" alt="" (mouseover)="aoPassarMouse('TypeScript')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/java.png" alt="" (mouseover)="aoPassarMouse('Java')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/python.png" alt="" (mouseover)="aoPassarMouse('Python')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/django.png" alt="" (mouseover)="aoPassarMouse('Django')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/mysql.png" alt="" (mouseover)="aoPassarMouse('MySQL')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/postgresql.png" alt="" (mouseover)="aoPassarMouse('PostgreSQL')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/intellj.png" alt="" (mouseover)="aoPassarMouse('IntelliJ')"
-             (mouseleave)="ocultarMensagem()">
-        <img src="assets/imagem/logo-habilidades/pycharm.png" alt="" (mouseover)="aoPassarMouse('PyCharm')"
-             (mouseleave)="ocultarMensagem()">
-      </picture>
+
+      <!-- Simulando entrada de dados por banco de dados-->
+      <div class="box-habilidades">
+        <picture *ngFor="let habilidade of habilidades">
+          <img [src]="habilidade.imagem" alt="{{habilidade.tecnologia}}">
+        </picture>
+      </div>
     </div>
 
   </section>

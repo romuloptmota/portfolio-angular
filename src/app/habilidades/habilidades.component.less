@@ -1,3 +1,21 @@
+header{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 40px;
+  div{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    h3{
+      font-size: 14px;
+      padding-top: 10px;
+      color: #777788;
+      span{
+        color: #43759E;
+      }
+    }
+  }
+}
+
 section {
   width: 80%;
   margin: auto;
@@ -6,8 +24,9 @@ section {
     margin: auto;
     background-color: #FFFFFF;
     padding: 40px 30px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
     h2{
+      padding-top: 20px;
       margin: auto;
       width: fit-content;
       font-size: 30px;
@@ -20,23 +39,26 @@ section {
       font-size: 20px;
       font-style: italic;
       color: #43759E;
-
+      padding-bottom: 10px;
     }
-    picture{
+    div.box-habilidades{
+      box-shadow: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding-top: 40px;
-      img{
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        margin: 5px;
-      }
-      img:hover{
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
+      picture{
+        img{
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          margin: 5px;
+        }
+        img:hover{
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+        }
       }
     }
+
   }
 }

@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Habilidades, habilidades} from "./habilidades";
 
 @Component({
   selector: 'app-habilidades',
@@ -7,15 +8,7 @@ import {Component} from '@angular/core';
 })
 export class HabilidadesComponent{
 
-  public tecnologia: string = '';
+  //Para setar informação no template simulando banco de dados
+  habilidades: Habilidades[] = habilidades;
 
-  // pegando informação desejada do template e exibindo na h3
-  aoPassarMouse(apresentado:string):void{
-    this.tecnologia = apresentado;
-  }
-
-  // apagar mensagem após remover o mouse
-  ocultarMensagem():void{
-    this.tecnologia = '';
-  }
 }
