@@ -8,14 +8,17 @@
   <section>
     <div>
       <h2>Habilidades</h2>
+      <h3>{{ tecnologiaAtual }}</h3>
 
       <!-- Simulando entrada de dados por banco de dados-->
       <div class="box-habilidades">
         <picture *ngFor="let habilidade of habilidades">
-          <img [src]="habilidade.imagem" alt="{{habilidade.tecnologia}}">
+          <img [src]="habilidade.imagem" alt="{{habilidade.tecnologia}}"
+               (mouseover)="atualizarTecnologia(habilidade.tecnologia)" (mouseleave)="limparTecnologia()">
+               <!--Exibir em h3 informação ao passar o mouse e limpar sem mouse-->
         </picture>
       </div>
-    </div>
 
+    </div>
   </section>
 </article>
