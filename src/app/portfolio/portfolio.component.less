@@ -1,9 +1,13 @@
 @background-color: #FFFFFF;
 @color-titulo-header: #777788;
-@color-tituloH2: #1D365D;
-@color-tituloH3: #43759E;
+@color-titulo: #1D365D;
+@color-subtitulo: #43759E;
 
-section{
+@background-header-box: #1d365d;
+@font-color-header: #9BABC5;
+@font-color-descricao: #393939;
+
+section {
   width: 80%;
   margin: auto;
   max-width: 1000px;
@@ -11,26 +15,79 @@ section{
   padding: 40px 30px;
   box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.1);
 
-  div{
+  div.tituloH2 {
     padding-top: 20px;
+    padding-bottom: 30px;
     margin: auto;
     width: fit-content;
     font-size: 30px;
-    color: @color-tituloH2;
+    color: @color-titulo;
   }
 
-  div.box-postfolios{
-    display: flex;
-    background-color: chocolate;
+  div.box-postfolios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
-    div{
-      background-color: crimson;
+    div.projetos-exemplos {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
 
-      picture{
-        img{
-          width: 100px;
+      header {
+        background-color: @background-header-box;
+        color: @font-color-header;
+        border-radius: 10px 10px 0 0;
+        font-style: italic;
+
+        h3 {
+          font-size: 14px;
+          width: fit-content;
+          margin: auto;
+          padding: 5px 0 10px 0;
         }
       }
+      picture.imagem-projeto{
+        img {
+          width: 100%;
+          margin: auto;
+          border: 1px solid rgba(0, 0, 0 , 0.1);
+        }
+      }
+      div.descricao-projeto{
+        margin: 10px;
+        h4{
+          font-size: 14px;
+          color: @color-subtitulo;
+        }
+        p{
+          color: @font-color-descricao;
+        }
+        ul{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+          padding: 0;
+          li{
+            list-style: none;
+            margin: auto;
+            a{
+              text-decoration: none;
+              color: @color-subtitulo;
+              i{
+                color: @color-subtitulo;
+                padding-right: 5px;
+              }
+            }
+            a:hover{
+              color: @color-titulo;
+              i:hover{
+                color: @color-titulo;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }
