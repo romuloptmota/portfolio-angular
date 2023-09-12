@@ -1,17 +1,27 @@
-<body>
+<article>
 
-  <article>
+  <section class="sobre">
 
-    <section class="sobre">
-      <div>
+
+    <div class="box-sobre">
+
+      <div class="box-nome">
+        <picture>
+          <img src="assets/imagem/avatar/nerg-barba.png">
+        </picture>
         <h2>
-          <p>
-            Eu sou <b>Rômulo</b> Mota<br>
-            <b class="desenvolvedor" *ngIf="condicaoDesenvolvedor">Desenvolvedor Web</b>
-            <b class="fullstack" *ngIf="condicaoFullStack">Full Stack</b>
+          <p>Eu sou <span>Rômulo</span> Mota</p>
+          <p class="texto-interativo">
+          <!-- metodo para interatividade -->
+            <span class="desenvolvedor" *ngIf="condicaoDesenvolvedor">Desenvolvedor Web</span>
+            <span class="fullstack" *ngIf="condicaoFullStack">Full Stack</span>
           </p>
         </h2>
-        <h3><code>public ComoTudoComecou: String = "Um pouco sobre mim.";</code></h3>
+      </div>
+
+
+      <div class="box-preview">
+        <h3><code>public comoTudoComecou: String = "Um pouco sobre mim.";</code></h3>
         <p class="pSobre">
           A muitos anos atrás fui apresentado aos jogos de computado por um colega de escola, que me chamou a
           atenção de imediato, pois até o momento conhecia somente os de console, e como era de costume nessa
@@ -33,9 +43,10 @@
         </p>
       </div>
 
-    </section>
+    </div>
 
 
-  </article>
 
-</body>
+  </section>
+</article>
+

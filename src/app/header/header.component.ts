@@ -14,11 +14,11 @@ export class HeaderComponent{
 
   @HostListener('window:resize')
   onsize(): void{
-    if(window.innerWidth > 690){
+    if(window.innerWidth > 1050){
       this.menuCompleto = true;
       this.menuMini = false;
       this.menuCompacto = false;
-    } else if(window.innerWidth > 370) {
+    } else if(window.innerWidth > 530) {
       this.menuCompleto = false;
       this.menuMini = true;
       this.menuCompacto = false;
