@@ -11,6 +11,7 @@ export class HabilidadesComponent{
   //Para setar informação no template simulando banco de dados
   habilidades: Habilidades[] = habilidades;
 
+
   tecnologiaAtual:string = '';
 
   // método informação exibida ao passar o mouse
