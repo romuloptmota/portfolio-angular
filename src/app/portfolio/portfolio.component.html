@@ -9,18 +9,47 @@
 
     <div class="projetos-exemplos">
       <header><h3>Front-End</h3></header>
-      <picture class="imagem-projeto"><img src="assets/imagem/projetos/portfolio/sobre-habilidades.png"></picture>
+
+      <picture class="imagem-projeto">
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[0]" alt="Random first slide" />
+            </div>
+
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[1]" alt="Random second slide" />
+            </div>
+
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[2]" alt="Random third slide" />
+            </div>
+
+          </ng-template>
+        </ngb-carousel>
+      </picture>
 
       <div class="descricao-projeto">
         <h4>Descrição :</h4>
         <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis. Aenean
           aliquam molestie leo, vitae iaculis nisl. </p>
         <h4>Tecnologias usadas no projeto :</h4>
-
+        <picture>
+          <img src="assets/imagem/logo-habilidades/angular.png">
+          <img src="assets/imagem/logo-habilidades/html5.png">
+          <img src="assets/imagem/logo-habilidades/css3.png">
+          <img src="assets/imagem/logo-habilidades/less.png">
+          <img src="assets/imagem/logo-habilidades/javascript.png">
+          <img src="assets/imagem/logo-habilidades/typescript.png">
+        </picture>
         <ul>
           <li>
-            <a href="#"><i class="fa-solid fa-code"></i>Código</a></li>
-          <li><a href="#"><i class="fa-solid fa-video"></i>Preview</a></li>
+            <a href="#"><i class="fa-brands fa-github"></i>Código</a></li>
+          <li><a href="#"><i class="fa-solid fa-browser"></i>Preview</a></li>
         </ul>
       </div>
 

@@ -6,6 +6,7 @@
 @background-header-box: #1d365d;
 @font-color-header: #9BABC5;
 @font-color-descricao: #393939;
+@font-color-box-hover: #FFFFFF;
 
 section {
   width: 80%;
@@ -47,42 +48,60 @@ section {
           padding: 5px 0 10px 0;
         }
       }
-      picture.imagem-projeto{
+
+      picture.imagem-projeto {
         img {
           width: 100%;
           margin: auto;
-          border: 1px solid rgba(0, 0, 0 , 0.1);
+
         }
       }
-      div.descricao-projeto{
+
+      div.descricao-projeto {
         margin: 10px;
-        h4{
+
+        h4 {
           font-size: 14px;
           color: @color-subtitulo;
         }
-        p{
+
+        p {
           color: @font-color-descricao;
         }
-        ul{
+
+        picture {
+          img{
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            margin-bottom: 20px;
+          }
+        }
+
+        ul {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
           padding: 0;
-          li{
+
+          li {
             list-style: none;
             margin: auto;
-            a{
+
+            a {
               text-decoration: none;
               color: @color-subtitulo;
-              i{
-                color: @color-subtitulo;
+
+              i {
                 padding-right: 5px;
               }
             }
-            a:hover{
-              color: @color-titulo;
-              i:hover{
-                color: @color-titulo;
-              }
+
+            a:hover {
+              background-color: @color-subtitulo;
+              padding: 0 10px 0 10px;
+              border-radius: 10px;
+              color: @font-color-box-hover;
+
             }
           }
         }
