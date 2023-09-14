@@ -15,27 +15,25 @@
 
         <picture class="imagem-projeto">
 
-          <ngb-carousel *ngIf="projeto.imagemProjeto" [interval]="0">
+          <a routerLink="">
+            <img [src]="projeto.imagemProjeto[0]" alt="Imagem 1">
+          </a>
 
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="projeto.imagemProjeto[0]" alt="Random first slide"/>
-              </div>
-            </ng-template>
+<!--          <ngb-carousel [showNavigationArrows]="true" *ngIf="projeto.imagemProjeto" [interval]="0">-->
 
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="projeto.imagemProjeto[1]" alt="Random second slide"/>
-              </div>
-            </ng-template>
+<!--            <ng-template ngbSlide>-->
+<!--              <img [src]="projeto.imagemProjeto[0]" alt="Imagem 1"/>-->
+<!--            </ng-template>-->
 
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="projeto.imagemProjeto[2]" alt="Random third slide"/>
-              </div>
-            </ng-template>
+<!--            <ng-template ngbSlide>-->
+<!--              <img [src]="projeto.imagemProjeto[1]" alt="Imagem 2"/>-->
+<!--            </ng-template>-->
 
-          </ngb-carousel>
+<!--            <ng-template ngbSlide>-->
+<!--              <img [src]="projeto.imagemProjeto[2]" alt="Imagem 3"/>-->
+<!--            </ng-template>-->
+
+<!--          </ngb-carousel>-->
 
         </picture>
 
