@@ -10,6 +10,7 @@ import { PageComponent } from './page/page.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import {FormsModule} from "@angular/forms";
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FormacaoComponent } from './formacao/formacao.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     PageComponent,
     HabilidadesComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    FormacaoComponent
   ],
   imports: [
     BrowserModule,

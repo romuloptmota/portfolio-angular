@@ -1,0 +1,36 @@
+<section>
+
+  <div class="titulo">
+
+    <h4>Instituições</h4>
+    <h2>Formação Acadêmica</h2>
+    <p>Todo mundo começa de algum lugar. Um passo de cada vez, e aqui estão alguns dos meus primeiros passos de muitos
+      que estão por vir.</p>
+
+  </div>
+
+  <div class="formacao">
+
+    <div class="instituicoes" *ngFor="let formacao of formacao">
+
+      <div class="logo-instituicao">
+        <picture>
+          <a href="{{ formacao.link }}" target="_blank">
+            <img [src]="formacao.logo">
+          </a>
+        </picture>
+      </div>
+
+      <div class="informacao-academica">
+        <h4>{{ formacao.nivel }}</h4>
+        <a href="{{ formacao.link }}" target="_blank">
+          <h3> {{ formacao.formacao }} </h3>
+        </a>
+        <p>{{ formacao.descricao }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
