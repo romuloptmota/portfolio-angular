@@ -1,116 +1,140 @@
-@background-color: #FFFFFF;
-@color-titulo-header: #777788;
-@color-titulo: #1D365D;
-@color-subtitulo: #43759E;
+@background-color: #F9F9F9;
+@color-texto: #777788;
+@color-titulo-principal: #1D365D;
+@color-titulo-secundario: #43759E;
 
-@background-header-box: #1d365d;
-@font-color-header: #9BABC5;
-@font-color-descricao: #393939;
+@background-box-projeto: #FFFFFF;
+@font-color-descricao: #777788;
 @font-color-box-hover: #FFFFFF;
 
-section {
-  width: 80%;
-  margin: auto;
-  max-width: 1000px;
+section.externa {
   background-color: @background-color;
-  padding: 40px 30px;
-  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.1);
 
-  div.tituloH2 {
-    padding-top: 20px;
-    padding-bottom: 30px;
+  section {
+    width: 80%;
     margin: auto;
-    width: fit-content;
-    font-size: 30px;
-    color: @color-titulo;
-  }
+    max-width: 1180px;
+    padding: 40px 30px;
 
-  div.box-postfolios {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    div.tituloH2 {
+      margin: auto;
+      width: fit-content;
 
-    div.projetos-exemplos {
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
-      font-size: 14px;
-
-      header {
-        background-color: @background-header-box;
-        color: @font-color-header;
-        border-radius: 10px 10px 0 0;
-        font-style: italic;
-
-        h3 {
-          font-size: 14px;
-          width: fit-content;
-          margin: auto;
-          padding: 5px 0 10px 0;
-        }
+      h4 {
+        margin: auto;
+        padding-right: 8px;
+        width: fit-content;
+        font-size: 14px;
+        font-variant-caps: all-petite-caps;
+        font-weight: bold;
+        color: @color-titulo-secundario;
       }
 
-      picture.imagem-projeto {
-        ngb-carousel{
-          img {
-            width: 100%;
-            height: 225.26px;
-            margin: auto;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-
-          }
-        }
+      h2 {
+        width: fit-content;
+        font-size: 30px;
+        color: @color-titulo-principal;
+        margin: -5px auto auto;
+        padding-bottom: 10px;
+        font-weight: bold;
       }
 
-      div.descricao-projeto {
-        margin: 10px;
-
-        h4 {
-          font-size: 14px;
-          color: @color-subtitulo;
-        }
-
-        p {
-          color: @font-color-descricao;
-        }
-
-        picture {
-          img{
-            width: 30px;
-            height: 30px;
-            padding: 5px;
-            margin-bottom: 20px;
-          }
-        }
-
-        ul {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-          padding: 0;
-
-          li {
-            list-style: none;
-            margin: auto;
-
-            a {
-              text-decoration: none;
-              color: @color-subtitulo;
-
-              i {
-                padding-right: 5px;
-              }
-            }
-
-            a:hover {
-              background-color: @color-subtitulo;
-              padding: 0 10px 0 10px;
-              border-radius: 10px;
-              color: @font-color-box-hover;
-
-            }
-          }
-        }
+      p {
+        margin: auto;
+        width: fit-content;
+        font-size: 14px;
+        color: @color-texto;
+        max-width: 600px;
+        text-align: center;
+        line-height: 15px;
       }
 
     }
+
+    div.box-portfolios {
+      padding-top: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div.projetos-exemplos {
+        max-width: 360px;
+        height: 440px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        background-color: @background-box-projeto;
+
+        picture.imagem-projeto {
+          ngb-carousel {
+            img {
+              width: 100%;
+              height: 200px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              border-radius: 10px 10px 0 0;
+            }
+          }
+        }
+
+        div.descricao-projeto {
+          margin: 30px 25px 10px 25px;
+
+          h4 {
+            font-size: 12px;
+            font-variant-caps: all-petite-caps;
+            font-weight: bold;
+            color: @color-titulo-secundario;
+          }
+
+          h2 {
+            font-size: 14px;
+            color: @color-titulo-principal;
+            font-weight: bold;
+            margin-top: -10px;
+          }
+
+          p {
+            color: @font-color-descricao;
+            font-size: 12px;
+            padding-bottom: 20px;
+            line-height: 15px;
+          }
+
+          picture {
+            img {
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+              margin-bottom: 25px;
+            }
+          }
+
+          ul.box-projeto {
+            display: flex;
+            padding: 0;
+
+            li {
+              list-style: none;
+              padding-right: 15px;
+
+              a {
+                text-decoration: none;
+                color: @color-titulo-secundario;
+                font-size: 12px;
+
+                i {
+                  padding-right: 3px;
+                }
+              }
+
+
+            }
+          }
+        }
+
+      }
+    }
   }
+
 }

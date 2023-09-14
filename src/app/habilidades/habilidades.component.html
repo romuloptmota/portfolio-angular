@@ -7,7 +7,11 @@
 
   <section>
     <div>
+      <h4>Tecnologias</h4>
       <h2>Habilidades</h2>
+      <p>
+        A fim de sempre continuar me aprimorando, não se assuste se a cada vista houver mais armas em meu arsenal.
+      </p>
       <h3>{{ tecnologiaAtual }}</h3>
 
       <!-- Simulando entrada de dados por banco de dados-->
@@ -15,7 +19,7 @@
         <picture *ngFor="let habilidade of habilidades">
           <img [src]="habilidade.imagem" alt="{{habilidade.tecnologia}}"
                (mouseover)="atualizarTecnologia(habilidade.tecnologia)" (mouseleave)="limparTecnologia()">
-               <!--Exibir em h3 informação ao passar o mouse e limpar sem mouse-->
+          <!--Exibir em h3 informação ao passar o mouse e limpar sem mouse-->
         </picture>
       </div>
 
