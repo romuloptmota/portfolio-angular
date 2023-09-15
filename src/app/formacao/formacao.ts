@@ -13,7 +13,7 @@ export const formacoesAcadenica = [
     link: "https://multivix.edu.br/",
     logo: "assets/imagem/logo-instituicoes/multivix.jpg",
     nivel: "Pós",
-    formacao: "Especialização em análise e desenvolvimento de sistema em tecnologia Python | Jan 2023 | Multivix",
+    formacao: "Análise e desenvolvimento de sistema em tecnologia Python | Jan 2023 | Multivix",
     descricao: "Curso focado em aprimorar o conhecimento na linguagem estruturada utilizada no back-end de qualquer aplicação que demande escalabilidade, regras de negócio, lógica e afins.",
   },
   {
@@ -29,8 +29,8 @@ export const formacoesAcadenica = [
     link: "https://startcapgemini.com.br/",
     logo: "assets/imagem/logo-instituicoes/capgemini.png",
     nivel: "Treinamento",
-    formacao: "Programa START by Capgemini | Cursando 2023 | Capgemini",
-    descricao: "Participando do programa Start By Capgemini na Trilha Java, onde estou aprimorando todos os conhecimentos necessários em desenvolvimento web utilizando Angular e Java. Uma dupla poderosa para o desenvolvimento web. ",
+    formacao: "Programa START by Capgemini na trilha Java | Cursando 2023 | Capgemini",
+    descricao: "Participando do programa Start By Capgemini, onde estou aprimorando todos os conhecimentos necessários em desenvolvimento web utilizando Angular e Java. ",
   },
 
 ];

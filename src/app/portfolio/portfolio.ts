@@ -26,7 +26,9 @@ export const portfolio = [
       "assets/imagem/logo-habilidades/css3.png",
       "assets/imagem/logo-habilidades/less.png",
       "assets/imagem/logo-habilidades/javascript.png",
-      "assets/imagem/logo-habilidades/typescript.png"
+      "assets/imagem/logo-habilidades/typescript.png",
+      "assets/imagem/logo-habilidades/git.png",
+      "assets/imagem/logo-habilidades/github.png",
     ],
   }
 
