@@ -7,6 +7,7 @@
 @font-color-descricao: #777788;
 @font-color-box-hover: #FFFFFF;
 
+
 section.externa {
   background-color: @background-color;
   padding-top: 5px;
@@ -77,6 +78,7 @@ section.externa {
           }
         }
 
+
         div.descricao-projeto {
           margin: 30px 25px 10px 25px;
 
@@ -138,3 +140,49 @@ section.externa {
   }
 
 }
+
+div#posicionamento-carousel {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  position: absolute;
+
+  div.imagem-carousel {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-width: 600px;
+    width: 70%;
+
+    div.close-carousel {
+      display: flex;
+      justify-content: right;
+
+      button {
+        padding-right: 10px ;
+        padding-left: 10px;
+        margin-bottom: -10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: @color-titulo-secundario;
+        border: none;
+        background-color:rgba(0, 0, 0, 0.0);
+      }
+    }
+
+
+    div.picsum-img-wrapper {
+      display: flex;
+      justify-content: center;
+
+      img {
+        padding: 5%;
+        min-width: 600px;
+      }
+    }
+
+  }
+}
+
+
+
+
+
