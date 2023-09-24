@@ -20,7 +20,7 @@ export const portfolio = [
       "assets/imagem/projetos/projeto-acessorios/contato.png",
       "assets/imagem/projetos/projeto-acessorios/carrinho.png"
     ],
-    imagemHabilidades:[
+    imagemHabilidades: [
       "assets/imagem/logo-habilidades/angular.png",
       "assets/imagem/logo-habilidades/html5.png",
       "assets/imagem/logo-habilidades/css3.png",
@@ -37,13 +37,35 @@ export const portfolio = [
     desenvolvimento: "Back-End",
     descricao: "Projeto desenvolvido durante meus estudos de Django e suas tecnologias.",
     link1: "https://github.com/romuloptmota/Site-Fusion",
-    link2: " ",
+    link2: "https://github.com/romuloptmota/Site-Fusion",
     imagemProjeto: [
       "assets/imagem/projetos/projeto-fusion/principal.png",
       "assets/imagem/projetos/projeto-fusion/segunda.png",
       "assets/imagem/projetos/projeto-fusion/Terceira.png"
     ],
-    imagemHabilidades:[
+    imagemHabilidades: [
+      "assets/imagem/logo-habilidades/python.png",
+      "assets/imagem/logo-habilidades/django.png",
+      "assets/imagem/logo-habilidades/pycharm.png",
+      "assets/imagem/logo-habilidades/postgresql.png",
+      "assets/imagem/logo-habilidades/git.png",
+      "assets/imagem/logo-habilidades/github.png",
+    ],
+  },
+  {
+    id: 3,
+    desenvolvimento: "Full-Stack",
+    descricao: "Desenvolvido durante um processo seletivo. Confesso que se fosse hoje, teria feito tudo diferente.",
+    link1: "https://github.com/romuloptmota/sistema-imoveis",
+    link2: "https://github.com/romuloptmota/sistema-imoveis",
+    imagemProjeto: [
+      "assets/imagem/projetos/imoveis/1.png",
+      "assets/imagem/projetos/imoveis/2.png",
+      "assets/imagem/projetos/imoveis/3.png"
+    ],
+    imagemHabilidades: [
+      "assets/imagem/logo-habilidades/html5.png",
+      "assets/imagem/logo-habilidades/css3.png",
       "assets/imagem/logo-habilidades/python.png",
       "assets/imagem/logo-habilidades/django.png",
       "assets/imagem/logo-habilidades/pycharm.png",
