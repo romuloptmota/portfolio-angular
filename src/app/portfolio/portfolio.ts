@@ -29,6 +29,27 @@ export const portfolio = [
       "assets/imagem/logo-habilidades/typescript.png",
       "assets/imagem/logo-habilidades/git.png",
       "assets/imagem/logo-habilidades/github.png",
+      "assets/imagem/logo-habilidades/intellj.png",
+    ],
+  },
+  {
+    id: 2,
+    desenvolvimento: "Back-End",
+    descricao: "Projeto desenvolvido durante meus estudos de Django e suas tecnologias.",
+    link1: "https://github.com/romuloptmota/Site-Fusion",
+    link2: " ",
+    imagemProjeto: [
+      "assets/imagem/projetos/projeto-fusion/principal.png",
+      "assets/imagem/projetos/projeto-fusion/segunda.png",
+      "assets/imagem/projetos/projeto-fusion/Terceira.png"
+    ],
+    imagemHabilidades:[
+      "assets/imagem/logo-habilidades/python.png",
+      "assets/imagem/logo-habilidades/django.png",
+      "assets/imagem/logo-habilidades/pycharm.png",
+      "assets/imagem/logo-habilidades/postgresql.png",
+      "assets/imagem/logo-habilidades/git.png",
+      "assets/imagem/logo-habilidades/github.png",
     ],
   }
 

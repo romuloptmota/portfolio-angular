@@ -11,17 +11,17 @@ export class PortfolioComponent {
   // simulando banco de dados
   projetos: Portfolio[] = portfolio;
 
-  // exibir carrosel oculto com imagens pelo display
-  alterarDisplay: any  = {};
+  // Adicione uma propriedade para rastrear o ID do projeto aberto
+  projetoAbertoId: number | null = null;
 
-  // funçao de ativar o carroucel oculto pelo display
-  abrirCarousel():void {
-    this.alterarDisplay = {display:'flex',};
+  // Função para abrir o carrossel com base no ID do projeto
+  abrirCarousel(projeto: Portfolio): void {
+    this.projetoAbertoId = projeto.id;
   }
 
-  // função de fechar carousel
+  // Função para fechar o carrossel
   fecharCarousel(): void {
-    this.alterarDisplay = {display:'none'}
+    this.projetoAbertoId = null; // Define o ID do projeto aberto como null para fechar o carrossel
   }
 
 }
