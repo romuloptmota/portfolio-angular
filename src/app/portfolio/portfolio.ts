@@ -16,20 +16,20 @@ export const portfolio = [
     link1: "https://github.com/romuloptmota/projeto-acessorios",
     link2: "https://romuloptmota.github.io/projeto-acessorios/",
     imagemProjeto: [
-      "assets/imagem/projetos/projeto-acessorios/produtos.png",
-      "assets/imagem/projetos/projeto-acessorios/contato.png",
-      "assets/imagem/projetos/projeto-acessorios/carrinho.png"
+      ".assets/imagem/projetos/projeto-acessorios/produtos.png",
+      ".assets/imagem/projetos/projeto-acessorios/contato.png",
+      ".assets/imagem/projetos/projeto-acessorios/carrinho.png"
     ],
     imagemHabilidades: [
-      "assets/imagem/logo-habilidades/angular.png",
-      "assets/imagem/logo-habilidades/html5.png",
-      "assets/imagem/logo-habilidades/css3.png",
-      "assets/imagem/logo-habilidades/less.png",
-      "assets/imagem/logo-habilidades/javascript.png",
-      "assets/imagem/logo-habilidades/typescript.png",
-      "assets/imagem/logo-habilidades/git.png",
-      "assets/imagem/logo-habilidades/github.png",
-      "assets/imagem/logo-habilidades/intellj.png",
+      ".assets/imagem/logo-habilidades/angular.png",
+      ".assets/imagem/logo-habilidades/html5.png",
+      ".assets/imagem/logo-habilidades/css3.png",
+      ".assets/imagem/logo-habilidades/less.png",
+      ".assets/imagem/logo-habilidades/javascript.png",
+      ".assets/imagem/logo-habilidades/typescript.png",
+      ".assets/imagem/logo-habilidades/git.png",
+      ".assets/imagem/logo-habilidades/github.png",
+      ".assets/imagem/logo-habilidades/intellj.png",
     ],
   },
   {
@@ -39,17 +39,17 @@ export const portfolio = [
     link1: "https://github.com/romuloptmota/Site-Fusion",
     link2: "https://github.com/romuloptmota/Site-Fusion",
     imagemProjeto: [
-      "assets/imagem/projetos/projeto-fusion/principal.png",
-      "assets/imagem/projetos/projeto-fusion/segunda.png",
-      "assets/imagem/projetos/projeto-fusion/Terceira.png"
+      ".assets/imagem/projetos/projeto-fusion/principal.png",
+      ".assets/imagem/projetos/projeto-fusion/segunda.png",
+      ".assets/imagem/projetos/projeto-fusion/Terceira.png"
     ],
     imagemHabilidades: [
-      "assets/imagem/logo-habilidades/python.png",
-      "assets/imagem/logo-habilidades/django.png",
-      "assets/imagem/logo-habilidades/pycharm.png",
-      "assets/imagem/logo-habilidades/postgresql.png",
-      "assets/imagem/logo-habilidades/git.png",
-      "assets/imagem/logo-habilidades/github.png",
+      ".assets/imagem/logo-habilidades/python.png",
+      ".assets/imagem/logo-habilidades/django.png",
+      ".assets/imagem/logo-habilidades/pycharm.png",
+      ".assets/imagem/logo-habilidades/postgresql.png",
+      ".assets/imagem/logo-habilidades/git.png",
+      ".assets/imagem/logo-habilidades/github.png",
     ],
   },
   {
@@ -59,19 +59,19 @@ export const portfolio = [
     link1: "https://github.com/romuloptmota/sistema-imoveis",
     link2: "https://github.com/romuloptmota/sistema-imoveis",
     imagemProjeto: [
-      "assets/imagem/projetos/imoveis/1.png",
-      "assets/imagem/projetos/imoveis/2.png",
-      "assets/imagem/projetos/imoveis/3.png"
+      ".assets/imagem/projetos/imoveis/1.png",
+      ".assets/imagem/projetos/imoveis/2.png",
+      ".assets/imagem/projetos/imoveis/3.png"
     ],
     imagemHabilidades: [
-      "assets/imagem/logo-habilidades/html5.png",
-      "assets/imagem/logo-habilidades/css3.png",
-      "assets/imagem/logo-habilidades/python.png",
-      "assets/imagem/logo-habilidades/django.png",
-      "assets/imagem/logo-habilidades/pycharm.png",
-      "assets/imagem/logo-habilidades/postgresql.png",
-      "assets/imagem/logo-habilidades/git.png",
-      "assets/imagem/logo-habilidades/github.png",
+      ".assets/imagem/logo-habilidades/html5.png",
+      ".assets/imagem/logo-habilidades/css3.png",
+      ".assets/imagem/logo-habilidades/python.png",
+      ".assets/imagem/logo-habilidades/django.png",
+      ".assets/imagem/logo-habilidades/pycharm.png",
+      ".assets/imagem/logo-habilidades/postgresql.png",
+      ".assets/imagem/logo-habilidades/git.png",
+      ".assets/imagem/logo-habilidades/github.png",
     ],
   }
 
