@@ -25,6 +25,7 @@ export const portfolio = [
       "./assets/imagem/logo-habilidades/html5.png",
       "./assets/imagem/logo-habilidades/css3.png",
       "./assets/imagem/logo-habilidades/less.png",
+      "./assets/imagem/logo-habilidades/bootstrap.png",
       "./assets/imagem/logo-habilidades/javascript.png",
       "./assets/imagem/logo-habilidades/typescript.png",
       "./assets/imagem/logo-habilidades/git.png",
@@ -66,6 +67,7 @@ export const portfolio = [
     imagemHabilidades: [
       "./assets/imagem/logo-habilidades/html5.png",
       "./assets/imagem/logo-habilidades/css3.png",
+      "./assets/imagem/logo-habilidades/bootstrap.png",
       "./assets/imagem/logo-habilidades/python.png",
       "./assets/imagem/logo-habilidades/django.png",
       "./assets/imagem/logo-habilidades/pycharm.png",
