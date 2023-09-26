@@ -1,5 +1,6 @@
 <section class="externa" >
 
+    <!-- Carousel projetos -->
     <div class="box-carousel" *ngFor="let projeto of projetos">
         <!-- Carousel imagem -->
         <div id="posicionamento-carousel" [ngStyle]="{'display': (projeto.id === projetoAbertoId ? 'flex' : 'none')}">
@@ -20,11 +21,11 @@
           </div>
         </div>
     </div>
-
+    <!--  / Carousel projetos -->
 
   <section class="interna">
 
-    <div class="tituloH2">
+    <div class="tituloH2 revelarOpacidade">
       <h4>Projetos</h4>
       <h2>Portfólio</h2>
       <p>Preparado para ver em ação minhas habilidades alienígenas? Esta sessão não foi feita para pessoas de coração
@@ -32,20 +33,16 @@
     </div>
 
 
-    <div class="box-portifolio-externo">
+    <div class="box-portifolio-externo revelarOpacidade2">
 
       <div class="box-portfolios" *ngFor="let projeto of projetos">
-
 
       <div class="projetos-exemplos">
 
         <picture class="imagem-projeto">
-
           <a routerLink="" >
             <img [src]="projeto.imagemProjeto[0]" alt="Imagem 1"  (click)="abrirCarousel(projeto)">
           </a>
-
-
         </picture>
 
         <div class="descricao-projeto">
@@ -61,18 +58,12 @@
               <a href="{{projeto.link1}}" target="_blank">
                 <i class="fa-brands fa-github"></i>Código</a>
             </li>
-            <li><a href="{{projeto.link2}}" target="_blank">
-              <i class="fa-solid fa-magnifying-glass"></i>Preview</a>
-            </li>
           </ul>
         </div>
 
       </div>
-
     </div>
-
     </div>
-
 
   </section>
 </section>

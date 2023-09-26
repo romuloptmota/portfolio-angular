@@ -1,5 +1,4 @@
 import {Component, HostListener} from '@angular/core';
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -13,8 +12,13 @@ export class HeaderComponent{
   public menuMini: boolean = false;
   public menuCompacto: boolean = false;
 
+  // serviço scroll-reveal
+
+
   // logica do menu responsivel de acordo com tamanho de tela.
   @HostListener('window:resize')
+
+  // Responsividade menu conforme tamanho da tela
   onsize(): void{
     if(window.innerWidth > 1050){
       this.menuCompleto = true;
@@ -30,5 +34,6 @@ export class HeaderComponent{
       this.menuCompacto = true;
     }
   }
+
 
 }

@@ -6,18 +6,21 @@
   </header>
   <p id="ancora-habilidades"></p>
 
-  <section >
+  <section>
     <div>
-      <h4 >Tecnologias</h4>
-      <h2>Habilidades</h2>
-      <p>
-        A fim de sempre continuar me aprimorando, não se assuste se a cada visita houver mais armas em meu arsenal.
-      </p>
-      <h3>{{ tecnologiaAtual }}</h3>
+
+      <div class="titulo-habilidades revelarOpacidade">
+        <h4 >Tecnologias</h4>
+        <h2 >Habilidades</h2>
+        <p>
+          A fim de sempre continuar me aprimorando, não se assuste se a cada visita houver mais armas em meu arsenal.
+        </p>
+        <h3>{{ tecnologiaAtual }}</h3>
+      </div>
 
       <!-- Simulando entrada de dados por banco de dados-->
-      <div class="box-habilidades">
-        <picture *ngFor="let habilidade of habilidades">
+      <div class="box-habilidades revelarOpacidade2" >
+        <picture *ngFor="let habilidade of habilidades" >
           <img [src]="habilidade.imagem" alt="{{habilidade.tecnologia}}"
                (mouseover)="atualizarTecnologia(habilidade.tecnologia)" (mouseleave)="limparTecnologia()">
           <!--Exibir em h3 informação ao passar o mouse e limpar sem mouse-->

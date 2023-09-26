@@ -3,7 +3,6 @@ export interface Portfolio {
   desenvolvimento: string;
   descricao: string;
   link1: string;
-  link2: string;
   imagemProjeto: string[];
   imagemHabilidades: string[];
 }
@@ -14,7 +13,6 @@ export const portfolio = [
     desenvolvimento: "Front-End",
     descricao: "Projeto desenvolvido durante o curso de Angular no programa Start by Capgemini.",
     link1: "https://github.com/romuloptmota/projeto-acessorios",
-    link2: "https://romuloptmota.github.io/projeto-acessorios/",
     imagemProjeto: [
       "./assets/imagem/projetos/projeto-acessorios/produtos.png",
       "./assets/imagem/projetos/projeto-acessorios/contato.png",
@@ -38,7 +36,6 @@ export const portfolio = [
     desenvolvimento: "Back-End",
     descricao: "Projeto desenvolvido durante meus estudos de Django e suas tecnologias.",
     link1: "https://github.com/romuloptmota/Site-Fusion",
-    link2: "https://github.com/romuloptmota/Site-Fusion",
     imagemProjeto: [
       "./assets/imagem/projetos/projeto-fusion/principal.png",
       "./assets/imagem/projetos/projeto-fusion/segunda.png",
@@ -58,7 +55,6 @@ export const portfolio = [
     desenvolvimento: "Full-Stack",
     descricao: "Desenvolvido durante um processo seletivo. Confesso que se fosse hoje, teria feito tudo diferente.",
     link1: "https://github.com/romuloptmota/sistema-imoveis",
-    link2: "https://github.com/romuloptmota/sistema-imoveis",
     imagemProjeto: [
       "./assets/imagem/projetos/imoveis/1.png",
       "./assets/imagem/projetos/imoveis/2.png",

@@ -1,16 +1,16 @@
-import {Component} from '@angular/core';
+import {Component, OnInit,} from '@angular/core';
 import {Habilidades, habilidades} from "./habilidades";
+import {ScrollRevealService} from "../scroll-reveal.service";
+
 
 @Component({
   selector: 'app-habilidades',
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.less']
 })
-export class HabilidadesComponent{
-
+export class HabilidadesComponent implements OnInit{
   //Para setar informação no template simulando banco de dados
   habilidades: Habilidades[] = habilidades;
-
 
   tecnologiaAtual:string = '';
 
@@ -24,4 +24,12 @@ export class HabilidadesComponent{
     this.tecnologiaAtual = '';
   }
 
+  // serviço scroll-reveal
+  constructor(private scrollRevealService: ScrollRevealService) {}
+
+  ngOnInit() {
+    // serviço scroll-reveal para efeito ao carregar a pagina
+    this.scrollRevealService.revelarOpacidade();
+    this.scrollRevealService.revelarOpacidade2();
+  }
 }

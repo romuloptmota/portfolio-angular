@@ -37,44 +37,46 @@ section {
     margin: auto;
     padding: 40px 30px;
 
-    h4 {
-      padding-top: 5px;
-      margin: auto;
-      width: fit-content;
-      padding-right: 11px;
-      font-size: 14px;
-      font-variant-caps: all-petite-caps;
-      font-weight: bold;
-      color: @color-titulo-secundario;
-    }
+    div.titulo-habilidades {
+      h4 {
+        padding-top: 5px;
+        margin: auto;
+        width: fit-content;
+        padding-right: 11px;
+        font-size: 14px;
+        font-variant-caps: all-petite-caps;
+        font-weight: bold;
+        color: @color-titulo-secundario;
+      }
 
-    h2 {
-      width: fit-content;
-      font-size: 30px;
-      color: @color-titulo-principal;
-      margin: -5px auto auto;
-      padding-bottom: 10px;
-      font-weight: bold;
-    }
+      h2 {
+        width: fit-content;
+        font-size: 30px;
+        color: @color-titulo-principal;
+        margin: -5px auto auto;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
 
-    p {
-      margin: auto;
-      width: fit-content;
-      font-size: 14px;
-      color: @color-texto;
-      max-width: 400px;
-      text-align: center;
-      line-height: 15px;
-    }
+      p {
+        margin: auto;
+        width: fit-content;
+        font-size: 14px;
+        color: @color-texto;
+        max-width: 400px;
+        text-align: center;
+        line-height: 15px;
+      }
 
-    h3 {
-      width: fit-content;
-      height: 20px;
-      font-size: 20px;
-      font-style: italic;
-      color: @color-titulo-secundario;
-      padding-top: 10px;
-      margin: auto auto -8px;
+      h3 {
+        width: fit-content;
+        height: 20px;
+        font-size: 20px;
+        font-style: italic;
+        color: @color-titulo-secundario;
+        padding-top: 10px;
+        margin: auto auto -8px;
+      }
     }
 
     div.box-habilidades {
@@ -100,4 +102,10 @@ section {
     }
 
   }
+}
+
+//configuração para scroll-reveal service, onde a
+// visibilidade deve ser gerenciada pelo mesmo
+.titulo-habilidades, .revelarOpacidade {
+  visibility: hidden;
 }
