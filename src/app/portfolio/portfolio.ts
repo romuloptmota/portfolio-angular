@@ -11,7 +11,7 @@ export const portfolio = [
   {
     id: 1,
     desenvolvimento: "Front-End",
-    descricao: "Projeto desenvolvido durante o curso de Angular no programa Start by Capgemini.",
+    descricao: "E-commerce de peçãs para informática que foi desenvolvido durante o curso de Angular no programa Start by Capgemini.",
     link1: "https://github.com/romuloptmota/projeto-acessorios",
     imagemProjeto: [
       "./assets/imagem/projetos/projeto-acessorios/produtos.png",
@@ -34,7 +34,7 @@ export const portfolio = [
   {
     id: 2,
     desenvolvimento: "Back-End",
-    descricao: "Projeto desenvolvido durante meus estudos de Django e suas tecnologias.",
+    descricao: "Portfolio para empresas, onde pode apresentar seus serviços, recursos, colaboradores, etc, que foi desenvolvido durante meus estudos de Django.",
     link1: "https://github.com/romuloptmota/Site-Fusion",
     imagemProjeto: [
       "./assets/imagem/projetos/projeto-fusion/principal.png",
@@ -53,7 +53,7 @@ export const portfolio = [
   {
     id: 3,
     desenvolvimento: "Full-Stack",
-    descricao: "Desenvolvido durante um processo seletivo. Confesso que se fosse hoje, teria feito tudo diferente.",
+    descricao: "Sistema de locação de imóveis, onde pode se cadastrar clientes, imoveis, vincular os clientes aos imovéis alocados e exibir somente os disponíveis.",
     link1: "https://github.com/romuloptmota/sistema-imoveis",
     imagemProjeto: [
       "./assets/imagem/projetos/imoveis/1.png",
